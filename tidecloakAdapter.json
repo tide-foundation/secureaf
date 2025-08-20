@@ -1,0 +1,27 @@
+{
+  "realm": "sasha-vibing-again",
+  "auth-server-url": "https://login.dauth.me",
+  "ssl-required": "external",
+  "resource": "vault",
+  "public-client": true,
+  "confidential-port": 0,
+  "jwk": {
+    "keys": [
+      {
+        "kid": "gtlNJeW5dhJpuzBYMXyrcRUG-rOVeAXweJGQfONXuhI",
+        "kty": "OKP",
+        "alg": "EdDSA",
+        "use": "sig",
+        "crv": "Ed25519",
+        "x": "KGlSArRL0PFWFW4s3sAxs_UsPBUC6Ski3qUbeDJKfYo"
+      }
+    ]
+  },
+  "vendorId": "2131868475024908671264532119971741310618810111263292227414641263254933361601",
+  "homeOrkUrl": "https://ork1.tideprotocol.com",
+  "client-origin-auth-https://tide-foundation.github.io": "4QhIo9xCIoFG0TIktuvJOGZwva9GToF1orvGmjwGWcxbeHbszJv4Q+aF2eRtm2qBLCWwerXRZcppAF9P3HL1DQ==",
+  "client-origin-auth-https://sashyo.github.io": "tNCUS627/S+orWGM13Vf8KdMNpsCmS4Vz3MHYh52GkrlWiJOuTKYgqH522t7kqwtNxBXcfbzYDc4RkA2DR8cCw==",
+  "client-origin-auth-https://secureaf.lovable.app": "TJv9joJrwV1dwrs3p7jmClEieAIONRiEsERo+IlNIEDVVh2szpONDfnWxolPrZGFOOfNsZPxPJyosLTy4qQLCQ==",
+  "client-origin-auth-https://preview--secureaf.lovable.app": "FT1XIU7qQYWVbbqyAlsP++sIpV1sWZJTPmtQSycO+2FHVhrYBj9U8eNUWN6YlsW+FPfkYHCevLATHxDabHKHBg==",
+  "client-origin-auth-https://ondamike.github.io": "BxulW7aAMHElwstYKQvklsZ/wJSNUUnCvKG60hOnOG+bdNZE9zc7gmShoTtOJZuwayyyK/q4MBDuDlGbmyyjAA=="
+}

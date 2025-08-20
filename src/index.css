@@ -1,0 +1,165 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* PrivAF Neon 90s Retro-Futuristic Design System */
+
+@layer base {
+  :root {
+    /* Neon cyberpunk color palette */
+    --background: 240 15% 5%;
+    --foreground: 280 100% 95%;
+
+    --card: 240 12% 8%;
+    --card-foreground: 280 100% 95%;
+
+    --popover: 240 12% 8%;
+    --popover-foreground: 280 100% 95%;
+
+    /* Neon pink primary */
+    --primary: 320 100% 60%;
+    --primary-foreground: 240 15% 5%;
+
+    /* Electric blue secondary */
+    --secondary: 195 100% 60%;
+    --secondary-foreground: 240 15% 5%;
+
+    /* Purple muted */
+    --muted: 260 30% 15%;
+    --muted-foreground: 260 20% 70%;
+
+    /* Cyan accent */
+    --accent: 180 100% 70%;
+    --accent-foreground: 240 15% 5%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 260 30% 20%;
+    --input: 260 30% 15%;
+    --ring: 320 100% 60%;
+
+    --radius: 0.5rem;
+    
+    /* Custom neon colors */
+    --neon-pink: 320 100% 60%;
+    --neon-blue: 195 100% 60%;
+    --neon-cyan: 180 100% 70%;
+    --neon-purple: 270 100% 70%;
+    
+    /* Gradients */
+    --gradient-background: linear-gradient(135deg, hsl(240 20% 8%) 0%, hsl(240 25% 4%) 100%);
+    --gradient-neon: linear-gradient(45deg, hsl(var(--neon-pink)), hsl(var(--neon-cyan)));
+    
+    /* Shadows and glows */
+    --glow-pink: 0 0 20px hsl(var(--neon-pink) / 0.5);
+    --glow-blue: 0 0 20px hsl(var(--neon-blue) / 0.5);
+    --glow-cyan: 0 0 20px hsl(var(--neon-cyan) / 0.5);
+    --glow-purple: 0 0 20px hsl(var(--neon-purple) / 0.5);
+
+    --sidebar-background: 0 0% 98%;
+
+    --sidebar-foreground: 240 5.3% 26.1%;
+
+    --sidebar-primary: 240 5.9% 10%;
+
+    --sidebar-primary-foreground: 0 0% 98%;
+
+    --sidebar-accent: 240 4.8% 95.9%;
+
+    --sidebar-accent-foreground: 240 5.9% 10%;
+
+    --sidebar-border: 220 13% 91%;
+
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    --background: 222.2 84% 4.9%;
+    --foreground: 210 40% 98%;
+
+    --card: 222.2 84% 4.9%;
+    --card-foreground: 210 40% 98%;
+
+    --popover: 222.2 84% 4.9%;
+    --popover-foreground: 210 40% 98%;
+
+    --primary: 210 40% 98%;
+    --primary-foreground: 222.2 47.4% 11.2%;
+
+    --secondary: 217.2 32.6% 17.5%;
+    --secondary-foreground: 210 40% 98%;
+
+    --muted: 217.2 32.6% 17.5%;
+    --muted-foreground: 215 20.2% 65.1%;
+
+    --accent: 217.2 32.6% 17.5%;
+    --accent-foreground: 210 40% 98%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 217.2 32.6% 17.5%;
+    --input: 217.2 32.6% 17.5%;
+    --ring: 212.7 26.8% 83.9%;
+    --sidebar-background: 240 5.9% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 224.3 76.3% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    background: var(--gradient-background);
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  }
+}
+
+@layer components {
+  /* Neon glow effects */
+  .neon-glow-pink {
+    box-shadow: var(--glow-pink);
+    text-shadow: var(--glow-pink);
+  }
+  
+  .neon-glow-blue {
+    box-shadow: var(--glow-blue);
+    text-shadow: var(--glow-blue);
+  }
+  
+  .neon-glow-cyan {
+    box-shadow: var(--glow-cyan);
+    text-shadow: var(--glow-cyan);
+  }
+  
+  .neon-glow-purple {
+    box-shadow: var(--glow-purple);
+    text-shadow: var(--glow-purple);
+  }
+  
+  /* Neon text styles */
+  .neon-text {
+    color: hsl(var(--neon-pink));
+    text-shadow: 0 0 10px hsl(var(--neon-pink) / 0.8);
+  }
+  
+  /* Compliance logo hover effect */
+  .compliance-logo {
+    @apply transition-all duration-300 relative;
+  }
+
+  .compliance-logo:hover img {
+    @apply opacity-95;
+    filter: drop-shadow(0 0 15px hsl(var(--neon-pink) / 0.6));
+  }
+}
